@@ -27,11 +27,15 @@ choose v3.11
 
 ### In The PlayGround Execute / follow below commands
 oadm policy add-cluster-role-to-user cluster-admin admin
-oc login localhost:8443
-use these to login admin/admin
-and refer if there are any AWS resources in AWS Console (Click on Dashboard).. <shoud be none>
 
+oc login localhost:8443
+
+use these to login admin/admin
+
+and refer if there are any AWS resources in AWS Console (Click on Dashboard).. <shoud be none>
+   
 mkdir awssb
+
 cd awssb
 
 ### Fetch installation artifacts
@@ -53,7 +57,7 @@ TARGETACCOUNTID=
 VPCID=
 
 ### If you are running on ec2 and have an IAM role setup with the required broker do not pass ACCESS_KEY_ID and SECRET_KEY
-./deploy.sh <ACCESSKEY> <SECRETKEY>
+./deploy.sh ACCESSKEY SECRETKEY
    
 
 ### check that the broker is running:
