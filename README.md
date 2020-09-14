@@ -1,11 +1,12 @@
 <h1> awsservicebroker Implementation with Openshift v311 </h1>
 
-In AWS::  Perform/Gather Following information
-Create user with admin priviliges along with programatic access
-login to AWS Console with above created user
-Gather the below information for future steps in this Demo.
-<h1> Your accountID, VPC,  Access Key and Secret Key </h1>
-#Pre-req steps using cloud formation templates
+### In AWS::  Perform/Gather Following information
+   Create user with admin priviliges along with programatic access
+   login to AWS Console with above created user
+   Gather the below information for future steps in this Demo 
+   Your accountID, VPC,  Access Key and Secret Key
+   
+### Pre-req steps using cloud formation templates
 Use cloud formation tempaltes to create stacks for Broker Database to maintain the AWS SB actions and Roles to allow you to create resources by any User
 
 1. upload "prerequisites.yaml" to create stack
@@ -15,12 +16,12 @@ Use cloud formation tempaltes to create stacks for Broker Database to maintain t
 
 Ensure both stacks are successfull.
 
-# Implementation in openshift
+### Implementation in openshift
 use https://learn.openshift.com
 use Openshift Playgrounds
 choose v3.11
 
-# In The PlayGround Execute / follow below commands
+### In The PlayGround Execute / follow below commands
 oadm policy add-cluster-role-to-user cluster-admin admin
 oc login localhost:8443
 use these to login admin/admin
@@ -53,14 +54,14 @@ oc get pods | grep aws-servicebroker
 ### check servicebroker logs
 oc logs $(oc get pods --no-headers -o name | grep aws-servicebroker)
 
-####Verification####
+### Verification
 
 oc login -u admin
 and refer in Others section and you should see AWS resources
 
 
 
-++++++Application Use case Testing ++++++++++++++++++++++
+### Application Usecase Testing
 As an Developer (developer/developer) User. 
 
 login to Service Catalog
