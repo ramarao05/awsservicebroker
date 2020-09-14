@@ -3,7 +3,7 @@
 ### In AWS::  Perform/Gather Following information
    Create user with admin priviliges along with programatic access
    login to AWS Console with above created user
-   Gather the below information for future steps in this Demo 
+   Gather the below information for future steps in this Demo
    Your accountID, VPC,  Access Key and Secret Key
    
 ### Pre-req steps using cloud formation templates
