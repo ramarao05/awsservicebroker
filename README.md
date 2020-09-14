@@ -3,7 +3,7 @@ AWS Service Broker implementation in Openshift
 #In AWS Gather Following information
 Create user with admin priviliges along with programatic access
 login to AWS with above created user
-Your accountID, VPC,  Access Key and Secret Key
+<h3> Your accountID, VPC,  Access Key and Secret Key >/h3>
 #Pre-req steps using cloud formation templates
 use cloud formation to create stacks for Broker Database and Roles
 1. upload "prerequisites.yaml" to create stack
@@ -14,14 +14,14 @@ use cloud formation to create stacks for Broker Database and Roles
 Ensure both stacks are successfull.
 
 # Implementation in openshift
-use learn.openshift.com
+use https://learn.openshift.com
 use Openshift Playgrounds
 choose v3.11
-+++++++++++
+# In The PlayGround Execute / follow below commands
 oadm policy add-cluster-role-to-user cluster-admin admin
 oc login localhost:8443
 use these to login admin/admin
-and refer if there are any AWS resources .. <shoud be none>
+and refer if there are any AWS resources in AWS Console (Click on Dashboard).. <shoud be none>
 
 mkdir awssb
 cd awssb
