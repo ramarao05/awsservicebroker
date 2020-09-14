@@ -1,7 +1,31 @@
 #!/bin/bash
+oadm policy add-cluster-role-to-user cluster-admin admin
+echo "User and password use as : admin/admin"
+oc login localhost:8443
+mkdir awssb
+cd awssb
+wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/deploy.sh
 
-ACCESSKEYID=$(echo -n $1 | base64)
-SECRETKEY=$(echo -n $2 | base64)
+wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/aws-servicebroker.yaml
+
+wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/parameters.env
+
+chmod +x deploy.sh
+
+
+echo " Enter ACCESSKEYID:"
+read AWSID
+echo " Enter SECRETKEY:"
+read AWSSECID
+echo " Enter AccountID:"
+read ACCID
+echo " VPV Name:"
+read vpcname
+sed -i "s/DUMMYACC/${ACCID}/g" ./parameters.env
+sed -i "s/DUMMYVPC/${vpcname}/g" ./parameters.env
+
+ACCESSKEYID=$(echo -n ${AWSID} | base64)
+SECRETKEY=$(echo -n ${AWSSECID} | base64)
 
 # On OpenShift 4.2 the project name has changed to "openshift-service-catalog-apiserver-operator"
 oc projects -q | grep -q "^kube-service-catalog$" && proj=kube-service-catalog
