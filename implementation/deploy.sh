@@ -40,3 +40,5 @@ oc process -f aws-servicebroker.yaml --param-file=parameters.env \
 	--param ACCESSKEYID=${ACCESSKEYID} \
 	--param SECRETKEY=${SECRETKEY} | oc apply -f - -n aws-sb
 
+sed -i "s/${ACCID}/DUMMYACC/g" ./parameters.env
+sed -i "s/${vpcname}/DUMMYVPC/g" ./parameters.env
