@@ -28,9 +28,13 @@ cd awssb
 
 ### Fetch installation artifacts
 wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/deploy.sh
+
 wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/aws-servicebroker.yaml
+
 wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/parameters.env
+
 chmod +x deploy.sh
+
 ### Edit parameters.env and update parameters as needed
 vi parameters.env
 update the below parameters and leave rest of them as it is:
