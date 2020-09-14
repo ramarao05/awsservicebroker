@@ -19,9 +19,13 @@ use Openshift Playgrounds
 choose v3.11
 +++++++++++
 git clone https://github.com/ramarao05/awsservicebroker.git
+
 cd awsservicebroker/implementation/
+
 chmod 755 *
+
 ./deploy.sh
+
 
 ### check that the broker is running:
 oc get pods | grep aws-servicebroker
