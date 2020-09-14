@@ -1,17 +1,30 @@
 # awsservicebroker
+
 AWS Service Broker implementation in Openshift
+
 #In AWS Gather Following information
+
 Create user with admin priviliges along with programatic access
+
 login to AWS with above created user
+
 Your accountID, VPC,  Access Key and Secret Key
-#Pre-req steps using cloud formation templates
+
+### Pre-req steps using cloud formation templates
+
 use cloud formation to create stacks for Broker Database and Roles
+
 1. upload "prerequisites.yaml" to create stack
+
    Provide stack name and Follow Default settings and click next until finish
+   
 2. upload "aws-service-broker-worker.json" to create a stack
+
    Provide stack name and in ServiceBrokerAccountId provide your accountID (which you have capture in earlier step)
+   
 
 Ensure both stacks are successfull.
+
 
 # Implementation in openshift
 use https://learn.openshift.com
@@ -32,9 +45,11 @@ chmod 755 *
 
 
 ### check that the broker is running:
+
 oc get pods | grep aws-servicebroker
 
 ### check servicebroker logs
+
 oc logs $(oc get pods --no-headers -o name | grep aws-servicebroker)
 
 ####Verification####
