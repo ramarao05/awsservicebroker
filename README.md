@@ -15,9 +15,12 @@ Ensure both stacks are successfull.
 
 # Implementation in openshift
 use learn.openshift.com
+
 use Openshift Playgrounds
+
 choose v3.11
-+++++++++++
+# In Playground
+
 git clone https://github.com/ramarao05/awsservicebroker.git
 
 cd awsservicebroker/implementation/
