@@ -14,11 +14,12 @@ use cloud formation to create stacks for Broker Database and Roles
 Ensure both stacks are successfull.
 
 # Implementation in openshift
-use learn.openshift.com
+use https://learn.openshift.com
 
 use Openshift Playgrounds
 
 choose v3.11
+
 # In Playground
 
 git clone https://github.com/ramarao05/awsservicebroker.git
@@ -43,21 +44,37 @@ and refer in Others section and you should see AWS resources
 
 
 
-++++++Application Use case Testing ++++++++++++++++++++++
+### Application Use case Testing 
+
 As an Developer (developer/developer) User. 
+
 login to Service Catalog
+
 Select Amazon S3
+
 Click Next
+
 Choose Plan as Custom
+
 Choose to create a New Project (you can maintain all your AWS resources)
+
 Project Name "myawsresources"  --> anything you like
+
 Give Project Display and Description details
+
 Bucket Access level "PublicRead"  --> I wanted to read the content as part of test
+
 Bucket Name should be uniq name , i choosed as "ramaraoawssbtesting"
+
 I left all other default and click next
+
 I will bind this resource later.
+
 Click Next and you should see that S3 Bucket will be being created 
+
 Goto Applications and Provisioned Services
+
 At this point the Provision in Pending , wait for few min and see the status of events 
+
 Amazon S3 Bucket is Ready to use.
 
