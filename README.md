@@ -26,7 +26,8 @@ use cloud formation to create stacks for Broker Database and Roles
 Ensure both stacks are successfull.
 
 
-### Implementation in openshift
+### In openshift::
+
 use https://learn.openshift.com
 
 use Openshift Playgrounds
