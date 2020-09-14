@@ -16,11 +16,11 @@ use cloud formation to create stacks for Broker Database and Roles
 
 1. upload "prerequisites.yaml" to create stack
 
-   Provide stack name and Follow Default settings and click next until finish
+   Provide stack name (aws-service-broker-prereq) and Follow Default settings and click next until finish
    
 2. upload "aws-service-broker-worker.json" to create a stack
 
-   Provide stack name and in ServiceBrokerAccountId provide your accountID (which you have capture in earlier step)
+   Provide stack name (aws-service-broker-worker) and in ServiceBrokerAccountId provide your accountID (which you have capture in earlier step)
    
 
 Ensure both stacks are successfull.
@@ -93,4 +93,15 @@ Goto Applications and Provisioned Services
 At this point the Provision in Pending , wait for few min and see the status of events 
 
 Amazon S3 Bucket is Ready to use.
+
+
+### To Destroy and rework
+### in AWS::
+Remove the the Cloud Formation Stacks
+Goto Cloud Formation -> stacks 
+Select previouly given cloud formation stack i.e aws-service-broker-prereqand click delete 
+Repeat same for aws-service-broker-role
+
+### in Openshift w.r.t this scenario
+Just close the existing playground and launch new openshift playground
 
