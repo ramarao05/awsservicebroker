@@ -1,8 +1,8 @@
-# awsservicebroker
+### AWS Service Broker implementation in Openshift
 
-AWS Service Broker implementation in Openshift
+### In AWS:: 
 
-#In AWS Gather Following information
+Create / Gather Following information
 
 Create user with admin priviliges along with programatic access
 
@@ -26,14 +26,14 @@ use cloud formation to create stacks for Broker Database and Roles
 Ensure both stacks are successfull.
 
 
-# Implementation in openshift
+### Implementation in openshift
 use https://learn.openshift.com
 
 use Openshift Playgrounds
 
 choose v3.11
 
-# In Playground
+### In Playground
 
 git clone https://github.com/ramarao05/awsservicebroker.git
 
