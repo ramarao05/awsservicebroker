@@ -2,9 +2,13 @@
 
 ### In AWS::  Perform/Gather Following information
    Create user with admin priviliges along with programatic access
+   
    login to AWS Console with above created user
+   
    Gather the below information for future steps in this Demo
+   
    Your accountID, VPC,  Access Key and Secret Key
+   
    
 ### Pre-req steps using cloud formation templates
 Use cloud formation tempaltes to create stacks for Broker Database to maintain the AWS SB actions and Roles to allow you to create resources by any User
@@ -41,12 +45,16 @@ chmod +x deploy.sh
 
 ### Edit parameters.env and update parameters as needed
 vi parameters.env
+
 update the below parameters and leave rest of them as it is:
+
 TARGETACCOUNTID=
+
 VPCID=
 
 ### If you are running on ec2 and have an IAM role setup with the required broker do not pass ACCESS_KEY_ID and SECRET_KEY
 ./deploy.sh <ACCESSKEY> <SECRETKEY>
+   
 
 ### check that the broker is running:
 oc get pods | grep aws-servicebroker
