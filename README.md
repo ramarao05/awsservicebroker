@@ -18,27 +18,10 @@ use learn.openshift.com
 use Openshift Playgrounds
 choose v3.11
 +++++++++++
-oadm policy add-cluster-role-to-user cluster-admin admin
-oc login localhost:8443
-use these to login admin/admin
-and refer if there are any AWS resources .. <shoud be none>
-
-mkdir awssb
-cd awssb
-
-### Fetch installation artifacts
-wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/deploy.sh
-wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/aws-servicebroker.yaml
-wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/parameters.env
-chmod +x deploy.sh
-### Edit parameters.env and update parameters as needed
-vi parameters.env
-update the below parameters and leave rest of them as it is:
-TARGETACCOUNTID=
-VPCID=
-
-### If you are running on ec2 and have an IAM role setup with the required broker do not pass ACCESS_KEY_ID and SECRET_KEY
-./deploy.sh <ACCESSKEY> <SECRETKEY>
+git clone https://github.com/ramarao05/awsservicebroker.git
+cd awsservicebroker/implementation/
+chmod 755 *
+./deploy.sh
 
 ### check that the broker is running:
 oc get pods | grep aws-servicebroker
