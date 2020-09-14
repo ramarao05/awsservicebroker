@@ -10,6 +10,7 @@ cd ./implementation/
 #wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/parameters.env
 
 #chmod 755 *.sh
+chmod 755 *.sh
 
 
 echo " Enter ACCESSKEYID:"
