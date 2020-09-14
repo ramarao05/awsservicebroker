@@ -2,7 +2,6 @@
 oadm policy add-cluster-role-to-user cluster-admin admin
 echo "User and password use as : admin/admin"
 oc login localhost:8443
-cd ./awsservicebroker/implementation
 #wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/deploy.sh
 
 #wget https://raw.githubusercontent.com/ramarao05/awsservicebroker/master/implementation/aws-servicebroker.yaml
