@@ -97,11 +97,17 @@ Amazon S3 Bucket is Ready to use.
 
 ### To Destroy and rework
 ### in AWS::
+
 Remove the the Cloud Formation Stacks
+
 Goto Cloud Formation -> stacks 
+
 Select previouly given cloud formation stack i.e aws-service-broker-prereqand click delete 
+
 Repeat same for aws-service-broker-role
 
+
 ### in Openshift w.r.t this scenario
+
 Just close the existing playground and launch new openshift playground
 
