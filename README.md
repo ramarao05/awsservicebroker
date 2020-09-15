@@ -119,3 +119,10 @@ Repeat same for aws-service-broker-role
 
 Just close the existing playground and launch new openshift playground
 
+
+### For Detailed information about AWS Service Broker :
+
+https://aws.amazon.com/partners/servicebroker/
+
+
+
