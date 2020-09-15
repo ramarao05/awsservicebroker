@@ -58,14 +58,14 @@ oc get pods | grep aws-servicebroker
 
 oc logs $(oc get pods --no-headers -o name | grep aws-servicebroker)
 
-####Verification####
+### Verification to confirm the AWS resources availability
 
 oc login -u admin
 and refer in Others section and you should see AWS resources
 
 
 
-### Application Use case Testing 
+### Application Usecase Testing 
 
 As an Developer (developer/developer) User. 
 
