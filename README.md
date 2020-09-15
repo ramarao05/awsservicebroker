@@ -17,6 +17,8 @@ Your accountID, VPC,  Access Key and Secret Key
 
 ### Pre-req steps using cloud formation templates
 
+Files available in awsservicebroker/cftemplates/ Folder
+
 use cloud formation to create stacks for Broker Database and Roles
 
 1. upload "prerequisites.yaml" to create stack
