@@ -4,9 +4,13 @@
 
 Create / Gather Following information
 
-Create user with admin priviliges along with programatic access
+Create awssbuser user with admin priviliges along with programatic access
 
-login to AWS with above created user
+Go to Services->IAM->add user-> provide user name "awssbuser" , select programatic and console access boxes" and give your pwd for console access
+Click Next
+in Set Permissions select "AdministratorAccess" and Next-Next-> Review and Finish
+
+login to AWS with above created user and capture the below details.
 
 Your accountID, VPC,  Access Key and Secret Key
 
