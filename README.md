@@ -62,7 +62,7 @@ oc logs $(oc get pods --no-headers -o name | grep aws-servicebroker)
 
 ### Verification to confirm the AWS resources availability
 
-Login to console with admin/admin
+Login to console ( Dashboard - just next to current tab ) with admin/admin
 
 and refer in Others section of service catalog and you should see AWS resources
 
