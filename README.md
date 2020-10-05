@@ -43,6 +43,12 @@ choose v3.11
 
 ### In Playground
 
+oadm policy add-cluster-role-to-user cluster-admin admin  <provides admin priviliges>
+   
+oc login localhost:8443
+
+Login as admin/admin
+
 git clone https://github.com/ramarao05/awsservicebroker.git
 
 cd awsservicebroker/implementation/
